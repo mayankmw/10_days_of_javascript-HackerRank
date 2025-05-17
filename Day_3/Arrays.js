@@ -1,10 +1,7 @@
 function getSecondLargest(nums) {
-    // Remove duplicates and sort the array in descending order
     let uniqueNums = [...new Set(nums)].sort((a, b) => b - a);
 
-    // Return the second largest element
     return uniqueNums[1];
 }
 
-// Example usage:
 let nums = [2, 3, 6, 6, 5];
